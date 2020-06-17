@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FireDamper</string>
+    <string name="compny_text"><b><u>Smabu.tech</u></b></string>
+    <string name="welcome_text"><b><u>Welcome to the FDU Scanner</u></b></string>
+    <string name="attribute"><b><u>Add Functionality Here</u></b></string>
+    <string name="addedDevice_text"><b><u>Added FDU List</u></b></string>
+    <string name="viewDetail_text"><b><u>View Details</u></b></string>
+    <string name="setdipin_text">Set Relay</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="add">add \n functionality</string>
+    <string name="read">read \n functionality</string>
+    <string name="show">Attribute</string>
+    <string name="save_att"><b><u>Save Attribute Here</u></b></string>
+    <string name="available_device"><b><u>Available Devices</u></b></string>
+
+
+
+</resources>

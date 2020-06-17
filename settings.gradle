@@ -1,0 +1,2 @@
+include ':app', ':niftyDialog', ':progress-library', ':jellytogglebutton'
+rootProject.name='FireDamper'

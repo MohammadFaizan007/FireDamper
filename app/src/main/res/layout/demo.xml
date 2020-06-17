@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="4dp">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.99"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/save_att"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.01"
+            android:background="@drawable/cancel"
+            android:backgroundTint="#000000"
+            android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/account_lo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_shadow">
+
+                    <ImageView
+                        android:id="@+id/name_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/croppic" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/gray"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/deviceName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingLeft="5dp"
+                        android:textSize="14sp"
+                        android:padding="3dp"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ahu Number"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold"/>
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="AIR Unit"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold"/>
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Floor Number"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold"/>
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Damper Unit"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold"/>
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/ahu_No"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:gravity="start"
+                                android:drawableStart="@drawable/two_dots"
+                                android:layout_gravity="center"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold"/>
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"/>
+                            <TextView
+                                android:id="@+id/air_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:gravity="start"
+                                android:drawableStart="@drawable/two_dots"
+                                android:layout_gravity="center"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold"/>
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"/>
+                            <TextView
+                                android:id="@+id/floor_No"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:gravity="start"
+                                android:drawableStart="@drawable/two_dots"
+                                android:layout_gravity="center"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold"/>
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"/>
+                            <TextView
+                                android:id="@+id/damper_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:gravity="start"
+                                android:padding="3dp"
+                                android:drawableStart="@drawable/two_dots"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold"/>
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/gray"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:background="#00000000">-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            app:cardCornerRadius="4dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:weightSum="1"-->
+<!--                   >-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/diPin"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="DI 1"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--                        android:padding="1dp"-->
+<!--                        android:textColor="@color/text_color"-->
+<!--                        />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/viePinDetail_1"-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="18dp"-->
+<!--                        android:background="@drawable/pluse_ic"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textStyle="bold"-->
+<!--                        />-->
+<!--            </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:background="@color/text_color"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/expand_layoutOne"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:weightSum="2">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/relayOne"-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="0.7"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:padding="1dp"-->
+<!--                        android:text="Relay 1"-->
+<!--                        android:textColor="@color/text_color"-->
+<!--                        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <RadioGroup-->
+<!--                        android:id="@+id/d1_r1_status"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_weight="1.3">-->
+
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/d1r1_close"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="@string/close"-->
+<!--                            android:checked="true"/>-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/d1r1_open"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="20dp"-->
+<!--                            android:text="@string/open"/>-->
+
+<!--                    </RadioGroup>-->
+
+<!--&lt;!&ndash;                    <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/status_switch_d1r1"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:checked="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:gravity="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_weight="1.2"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbJelly="active_tremble_body_slim_jim"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftBackgroundColor="@color/gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftText="Off"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftThumbColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightText="On"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightTextColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightTextSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightThumbColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginRight="10dp" />&ndash;&gt;-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:weightSum="2">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_weight="0.7"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:padding="1dp"-->
+<!--                        android:text="Relay 2"-->
+<!--                        android:textColor="@color/text_color"-->
+<!--                        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <RadioGroup-->
+<!--                        android:id="@+id/d1_r2_status"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_weight="1.3">-->
+
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/d1r2_close"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="@string/close"-->
+<!--                            android:checked="true"/>-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/d1r2_open"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="20dp"-->
+<!--                            android:text="@string/open" />-->
+
+<!--                    </RadioGroup>-->
+
+<!--&lt;!&ndash;                    <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/status_switch_d1r2"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:gravity="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:checked="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_weight="1.2"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbJelly="active_tremble_body_slim_jim"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftBackgroundColor="@color/gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftText="Off"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftThumbColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightText="On"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightTextColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightTextSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightThumbColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginRight="10dp" />&ndash;&gt;-->
+
+<!--                </LinearLayout>-->
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/d1_submit"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="@drawable/rect_btn_bg_darkprimary"-->
+<!--                    android:text="Submit"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:layout_marginBottom="5dp"/>-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            app:cardCornerRadius="4dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:weightSum="2">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/diPin2"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:text="DI 2"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--                        android:padding="1dp"-->
+<!--                        android:textColor="@color/text_color"-->
+<!--                        />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/viewPinDetail_2"-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="18dp"-->
+<!--                        android:background="@drawable/pluse_ic"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textStyle="bold"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:background="@color/text_color"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/expand_layouttwo"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="gone">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:weightSum="2">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/relaytwo"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_weight="0.7"-->
+<!--                            android:layout_marginLeft="8dp"-->
+<!--                            android:padding="1dp"-->
+<!--                            android:text="Relay 1"-->
+<!--                            android:textColor="@color/text_color"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                            android:textStyle="bold" />-->
+
+
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/d2_r1_status"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_weight="1.3">-->
+
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d2r1_close"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="@string/close"-->
+<!--                                android:checked="true"/>-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d2r1_open"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:text="@string/open"/>-->
+
+<!--                        </RadioGroup>-->
+
+
+<!--                        &lt;!&ndash;                        <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:checked="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:gravity="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1.2"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbJelly="active_tremble_body_slim_jim"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftBackgroundColor="@color/gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftText="Off"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftThumbColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightText="On"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightThumbColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginRight="10dp" />&ndash;&gt;-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:weightSum="2">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_weight="0.7"-->
+<!--                            android:layout_marginLeft="8dp"-->
+<!--                            android:padding="1dp"-->
+<!--                            android:text="Relay 2"-->
+<!--                            android:textColor="@color/text_color"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/d2_r2_status"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_weight="1.3">-->
+
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d2r2_close"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="@string/close"-->
+<!--                                android:checked="true"/>-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d2r2_open"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:text="@string/open"/>-->
+
+<!--                        </RadioGroup>-->
+
+<!--&lt;!&ndash;                        <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:checked="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:gravity="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1.2"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbJelly="active_tremble_body_slim_jim"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftBackgroundColor="@color/gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftText="Off"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftThumbColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightText="On"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightThumbColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginRight="10dp" />&ndash;&gt;-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/d2_submit"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:background="@drawable/rect_btn_bg_darkprimary"-->
+<!--                        android:text="Submit"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginRight="8dp"-->
+<!--                        android:layout_marginBottom="5dp"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            app:cardCornerRadius="4dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:weightSum="2">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/diPin3"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:text="DI 3"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--                        android:padding="1dp"-->
+<!--                        android:textColor="@color/text_color"-->
+<!--                        />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/viewPinDetail_3"-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="18dp"-->
+<!--                        android:background="@drawable/pluse_ic"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textStyle="bold"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:background="@color/text_color"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/expand_layoutthree"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="gone">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:weightSum="2">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/relaythree"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_weight="0.7"-->
+<!--                            android:layout_marginLeft="8dp"-->
+<!--                            android:padding="1dp"-->
+<!--                            android:text="Relay 1"-->
+<!--                            android:textColor="@color/text_color"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/d3_r1_status"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_weight="1.3">-->
+
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d3r1_close"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="@string/close"-->
+<!--                                android:checked="true"/>-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d3r1_open"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:text="@string/open"/>-->
+
+<!--                        </RadioGroup>-->
+
+<!--&lt;!&ndash;                        <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:checked="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:gravity="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1.2"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbJelly="active_tremble_body_slim_jim"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftBackgroundColor="@color/gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftText="Off"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftThumbColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightText="On"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightThumbColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginRight="10dp" />&ndash;&gt;-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:weightSum="2">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_weight="0.7"-->
+<!--                            android:layout_marginLeft="8dp"-->
+<!--                            android:padding="1dp"-->
+<!--                            android:text="Relay 2"-->
+<!--                            android:textColor="@color/text_color"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                            android:textStyle="bold" />-->
+
+
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/d3_r2_status"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_weight="1.3">-->
+
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d3r2_close"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="@string/close"-->
+<!--                                android:checked="true"/>-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d3r2_open"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:text="@string/open"/>-->
+
+<!--                        </RadioGroup>-->
+
+<!--&lt;!&ndash;                        <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:checked="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:gravity="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1.2"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbJelly="active_tremble_body_slim_jim"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftBackgroundColor="@color/gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftText="Off"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftThumbColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightText="On"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightThumbColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginRight="10dp" />&ndash;&gt;-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/d3_submit"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:background="@drawable/rect_btn_bg_darkprimary"-->
+<!--                        android:text="Submit"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginRight="8dp"-->
+<!--                        android:layout_marginBottom="5dp"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            app:cardCornerRadius="4dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="4dp"-->
+<!--                    android:weightSum="2">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/diPin4"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:text="DI 4"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--                        android:padding="1dp"-->
+<!--                        android:textColor="@color/text_color"-->
+<!--                        />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/viewPinDetail_4"-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="18dp"-->
+<!--                        android:background="@drawable/pluse_ic"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textStyle="bold"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:background="@color/text_color"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/expand_layouttfour"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="gone">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:weightSum="2">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/relayfour"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_weight="0.7"-->
+<!--                            android:layout_marginLeft="8dp"-->
+<!--                            android:padding="1dp"-->
+<!--                            android:text="Relay 1"-->
+<!--                            android:textColor="@color/text_color"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/d4_r1_status"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_weight="1.3">-->
+
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d4r1_close"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="@string/close"-->
+<!--                                android:checked="true"/>-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d4r1_open"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:text="@string/open"/>-->
+
+<!--                        </RadioGroup>-->
+
+
+<!--                        &lt;!&ndash;                        <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:checked="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:gravity="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1.2"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbJelly="active_tremble_body_slim_jim"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftBackgroundColor="@color/gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftText="Off"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftThumbColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightText="On"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightThumbColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginRight="10dp" />&ndash;&gt;-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:weightSum="2">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_weight="0.7"-->
+<!--                            android:layout_marginLeft="8dp"-->
+<!--                            android:padding="1dp"-->
+<!--                            android:text="Relay 2"-->
+<!--                            android:textColor="@color/text_color"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/d4_r2_status"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_weight="1.3">-->
+
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d4r2_close"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="@string/close"-->
+<!--                                android:checked="true"/>-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/d4r2_open"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginStart="20dp"-->
+<!--                                android:text="@string/open"/>-->
+
+<!--                        </RadioGroup>-->
+
+
+<!--                        &lt;!&ndash;                        <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginStart="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginEnd="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:checked="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:gravity="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1.2"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbJelly="active_tremble_body_slim_jim"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftBackgroundColor="@color/gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftText="Off"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbLeftThumbColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightText="On"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightTextSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbRightThumbColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            app:jtbTextMarginRight="10dp" />&ndash;&gt;-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/d4_submit"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:background="@drawable/rect_btn_bg_darkprimary"-->
+<!--                        android:text="Submit"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginRight="8dp"-->
+<!--                        android:layout_marginBottom="5dp"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+
+<!--    </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--</RelativeLayout>-->
